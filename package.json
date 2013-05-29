@@ -1,0 +1,19 @@
+{
+  "name": "errno",
+  "version": "0.0.1",
+  "description": "UNIX errors with additions for launchctl",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": "https://github.com/evanlucas/node-errno",
+  "keywords": [
+    "errno"
+  ],
+  "author": "Evan Lucas",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  }
+}
