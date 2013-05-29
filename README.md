@@ -6,7 +6,7 @@ This is mainly for use with [node-launchctl](http://github.com/evanlucas/node-la
 
 ## Install
 
-    npm install errno
+    npm install syserrno
 
 
 ## API
