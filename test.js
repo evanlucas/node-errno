@@ -326,6 +326,9 @@ describe('Errors', function(){
   it('should recognize EJNFOUN', function() {
     testError('EJNFOUN', 149);
   });
+  it('should recognize EINCMD', function() {
+    testError('EINCMD', 150);
+  });
 });
 
 describe('strerror', function(){
@@ -649,5 +652,8 @@ describe('strerror', function(){
   });
   it('should recognize 149', function() {
     testStr(149, 'Job not found');
+  });
+  it('should recognize 150', function() {
+    testStr(150, 'Invalid command');
   });
 });
