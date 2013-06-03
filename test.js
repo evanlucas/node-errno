@@ -1,12 +1,15 @@
 var should = require('should')
   , Errno = require('./lib')
   , errorCode = Errno.errorForCode
-  , strerror = Errno.strerror;
+  , strerror = Errno.strerror
+  , errorNum = Errno.errorForErrno;
 
 describe('Errors', function(){
   var testError = function(code, errno) {
     var e = errorCode(code);
     e.should.have.property('errno', errno);
+    var ex = errorNum(errno);
+    ex.should.have.property('code', code);
   }
   it('should recognize EPERM', function() {
   	testError('EPERM', 1);

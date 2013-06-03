@@ -42,3 +42,10 @@ Returns: An Error object containing
       msg: 'Invalid domain',
       errno: 148
     }
+
+### #errorForErrno(errno)
+
+Params:
+
+- {Number} errno The error number
+
