@@ -1,6 +1,6 @@
 {
   "name": "syserrno",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "UNIX errors with additions for launchctl",
   "main": "./lib/index.js",
   "scripts": {
