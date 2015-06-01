@@ -1,13 +1,16 @@
 # node-errno
 
+[![Build Status](https://travis-ci.org/evanlucas/node-errno.svg)](https://travis-ci.org/evanlucas/node-errno)
+
 An easier way to track errno's
 
 This is mainly for use with [node-launchctl](http://github.com/evanlucas/node-launchctl)
 
 ## Install
 
-    npm install syserrno
-
+```bash
+$ npm install syserrno
+```
 
 ## API
 
@@ -19,9 +22,11 @@ Params:
 
 Example:
 
-    var errno = require('errno')
-    console.log(errno.strerror(148));
-    // outputs "Invalid domain"
+```js
+var errno = require('errno')
+console.log(errno.strerror(148))
+// outputs "Invalid domain"
+```
 
 ### #errorForCode(code)
 
@@ -31,17 +36,21 @@ Params:
 
 Example:
 
-    var errno = require('errno')
-    var err = errno.errorForCode('EIVALDO');
-    console.log(err);
+```js
+var errno = require('errno')
+var err = errno.errorForCode('EIVALDO')
+console.log(err)
+```
 
 Returns: An Error object containing
 
-    {
-      code: 'EIVALDO',
-      msg: 'Invalid domain',
-      errno: 148
-    }
+```js
+{
+  code: 'EIVALDO',
+  msg: 'Invalid domain',
+  errno: 148
+}
+```
 
 ### #errorForErrno(errno)
 
