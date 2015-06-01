@@ -10,7 +10,7 @@
   "keywords": [
     "errno"
   ],
-  "author": "Evan Lucas",
+  "author": "Evan Lucas <evanlucas@me.com>",
   "license": "BSD",
   "devDependencies": {
     "mocha": "~2.2.5",
