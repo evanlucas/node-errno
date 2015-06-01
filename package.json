@@ -4,7 +4,7 @@
   "description": "UNIX errors with additions for launchctl",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "grunt"
+    "test": "mocha -R spec"
   },
   "repository": "https://github.com/evanlucas/node-errno",
   "keywords": [
